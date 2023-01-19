@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function nightDayHandler(bt) {
+        if (bt.value === "night") {
+          setBGColor("black", "lightblue");
+          bt.value = "day";
+
+          setAtagColor("powderblue");
+        } else {
+          setBGColor("white", "pink");
+          bt.value = "night";
+          setAtagColor("plum");
+        }
+      } //nightDayHandler
+      function setAtagColor(color) {
+        var alist = document.querySelectorAll("a");
+        var i = 0;
+
+        while (i < alist.length) {
+          alist[i].style.color = color;
+          i++;
+        }
+      } // setAtagColor
+
+      function setBGColor(color1, color2) {
+        var target = document.querySelector("body");
+        target.style.backgroundColor = color1;
+        target.style.color = color2;
+      } // setBGColor
+    </script>
+  </head>
+  <body style="font-family: D2coding">
+    <h1><a href="sample05.html">WEB</a></h1>
+    <input type="button" value="night" onclick="nightDayHandler(this);" />
+    <br />
+    <ol>
+      <li><a href="http://naver.com">naver</a></li>
+      <li><a href="http://google.com">google</a></li>
+      <li><a href="http://daum.net">daum</a></li>
+    </ol>
+    <br />
+
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odit
+      odio reprehenderit molestias unde impedit in porro nobis delectus nostrum
+      quae sapiente adipisci corporis eligendi, maxime, id nihil debitis
+      exercitationem vero quis magni consequuntur possimus! Eaque laboriosam
+      fugit placeat amet a aperiam expedita repudiandae. Iste impedit magni
+      nostrum ut aliquam.
+    </p>
+    <img src="https://picsum.photos/id/684/600/400" alt="" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat
+      velit et ab explicabo, quod nihil corrupti? Accusantium eos,
+      exercitationem quasi, repellendus obcaecati debitis beatae consequuntur
+      repudiandae, pariatur cumque nulla?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .story {
+            background:goldenrod;
+            color: red;
+            width: 500px;
+            visibility: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="naming">
+      <label style="font-size: xx-large;">Enter custom name : </label>
+      <input type="text" id="customname" />
+    </div>
+
+    <div class="UsUk">
+        <label style="font-size: x-large;">US</label>
+        <input type="radio" name="ukus" id="us" value="us" checked>
+        <label style="font-size: x-large;">UK</label>
+        <input type="radio" name="ukus" id="uk" value="uk"></label>
+    </div>
+
+    <div>
+        <input type="button" class='changeColor' value="changeColor!!!!!!">
+    </div>
+
+    <div class="makestory">
+        <input type="button" value="make random story" class="randomize">
+    </div>
+
+    <div class="story">
+        <p class="story"></p>
+    </div>
+    <script src="js/randomstory.js"></script>
+  </body>
+</html>
