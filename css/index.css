@@ -27,6 +27,11 @@ body {
   font-family: "D2Coding";
 }
 
+.article textarea{
+  display: block;
+}
+
+
 #mountain {
   background-color: rgb(35, 196, 137);
   border: outset rgb(35, 196, 137);
@@ -40,13 +45,15 @@ body {
 
 .mountainbtn {
   position: relative;
+  display: inline;
+  width: 100%;
 }
 
 .mountain-list {
     display: none;
-    width:80%;
+    width:70%;
     position: absolute;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-top: 3px;
     z-index:1;
     border: 2px solid rgb(35, 196, 137);
@@ -79,16 +86,22 @@ body {
     background-color: white;
     position: absolute;
 }
+#contents::selection {
+  color: white;
+  background-color: rgba(76, 121, 65, 0.534);
+  text-decoration: double;
+}
 
-.article #title {
-  width: 300px;
+
+.contentbox #title {
+  width: 47%;
   height: 30px;
   font-size: larger;
   position: relative;
 }
 
-.article textarea {
-  width: 410px;
+.contentbox textarea {
+  width: 70%;
   height: 500px;
   margin-left: 10%;
   margin-top: 10px;
@@ -96,8 +109,9 @@ body {
 }
 
 .articlebtn {
-  margin-left: 60%;
+  margin-left:60%;
   margin-top: 10px;
+  display: block;
 }
 
 .articlebtn #register {
