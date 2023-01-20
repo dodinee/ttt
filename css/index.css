@@ -1,24 +1,9 @@
 body {
-  background-image: url("https://down-yuantu.pngtree.com/element_our/bg/20180920/bg/c8db52d39fa0d.png?e=1674130685&st=MDAyOGQ0YTU3YzZkMDcxM2ZlMTYzOTY2YmI0ODNmY2E&n=—Pngtree—sunny+mountain+landscape+vector+illustration_3637922.png");
+  background-image: url("https://i.pinimg.com/564x/5a/ba/d0/5abad00d32979a205fc52b6019bed7d6.jpg");
+  background-size: contain;
   font-family: "D2Coding";
-}
 
-/* a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
 }
-.right_area .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100vw * (45 / 1920));
-  height: calc(100vw * (45 / 1920));
-
-  border-radius: 50%;
-  border: solid 2px #eaeaea;
-  background-color: #fff;
-} */
 
 #logo{
     width: 20%;
@@ -28,49 +13,82 @@ body {
     animation-name: logomoving;
     animation-iteration-count: infinite;
 }
+
 .pagetop p {
     font-size: xx-large;
-    margin-left: 32%;
+    margin-left: 30%;
     color: rgb(0, 147, 86);
+    font-family: fantasy;
 }
+
 .article button, input, textarea {
-  border: 2px solid rgb(35, 196, 137);
+  border: 2px inset rgb(35, 196, 137);
   border-radius: 5px;
   font-family: "D2Coding";
 }
-.article #mountain {
+
+#mountain {
   background-color: rgb(35, 196, 137);
+  border: outset rgb(35, 196, 137);
   color: white;
-  font-size: medium;
+  font-size: 100%;
   margin-left: 10%;
   margin-top: 10px;
-  width: 10%;
+  width: 100px;
   height: 35px;
+}
+
+.mountainbtn {
   position: relative;
 }
 
-.article .mountain-list a{
+.mountain-list {
     display: none;
+    width:80%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 3px;
+    z-index:1;
+    border: 2px solid rgb(35, 196, 137);
+    border-radius: 15px;
+}
+
+.mountain-list a{
+  display: block;
+  color: rgb(1, 129, 82);
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
 }
 #mountain:hover {
     transform: scale(1.2);
 }
-#mountain:hover .mountain-list a{
+
+.mountain-list a:hover{
+  background-color:  rgba(124, 202, 144, 0.5);
+  color: rgb(11, 116, 72);
+  border-radius: 10px;
+  transform: scale(1.2);
+  font-size: x-large;
+}
+
+.mountainbtn:hover .mountain-list {
     display: block;
     background-color: white;
-    color: rgb(35, 196, 137);
-    position: relative;
+    position: absolute;
 }
 
 .article #title {
-  width: 60%;
+  width: 300px;
   height: 30px;
   font-size: larger;
   position: relative;
 }
 
 .article textarea {
-  width: 71%;
+  width: 410px;
   height: 500px;
   margin-left: 10%;
   margin-top: 10px;
@@ -81,24 +99,35 @@ body {
   margin-left: 60%;
   margin-top: 10px;
 }
+
 .articlebtn #register {
   background-color: rgb(35, 196, 137);
   color: aliceblue;
   width: 70px;
   height: 30px;
   border-radius: 5px;
-  border: 0px;
+  border: 3px outset rgb(35, 196, 137);
   font-size: medium;
 }
+
 .articlebtn #cancle {
   background-color: rgb(158, 158, 158);
   color: aliceblue;
   width: 70px;
   height: 30px;
   border-radius: 5px;
-  border: 0px;
+  border: 3px outset rgb(158, 158, 158);
   font-size: medium;
 }
+
+.articlebtn #register:hover {
+  transform: scale(1.2);
+}
+
+.articlebtn #cancle:hover {
+  transform: scale(1.2);
+}
+
 .icon.heart img {
   width: calc(100vw * (24 / 1920));
   height: calc(100vw * (24 / 1920));
